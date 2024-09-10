@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+</head>
+<body>
+    <h2>Contact Form</h2>
+    <form action="send_email.php" method="post" enctype="multipart/form-data">
+        <label for="email_from">Your Email:</label><br>
+        <input type="email" id="email_from" name="email_from" required><br><br>
+
+        <label for="email_to">Recipient's Email:</label><br>
+        <input type="email" id="email_to" name="email_to" required><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="attachment">Attachment:</label><br>
+        <input type="file" id="attachment" name="attachment"><br><br>
+
+        <input type="submit" value="Send">
+    </form>
+</body>
+</html>
